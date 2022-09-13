@@ -1,6 +1,6 @@
 # dxf_merger
 
-DFX Merger based on ezdxf.
+DFX Merger, just a function wrap based on ezdxf to merge n dxf files into a unique new dxf file.
 
 ## Requirements
 
