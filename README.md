@@ -8,7 +8,8 @@ DXF Merger, just a function wrap based on ezdxf to merge n dxf files into a uniq
 ## Requirements
 
 - ezdxf (https://github.com/mozman/ezdxf)
-- black code formatter (https://github.com/psf/black)
+
+Code formatter used: black (https://github.com/psf/black)
 
 ## How it works
 
