@@ -1,6 +1,8 @@
-# dxf_merger
+# DXF merger
 
-DFX Merger, just a function wrap based on ezdxf to merge n dxf files into a unique new dxf file.
+![imagen](https://user-images.githubusercontent.com/4071796/190007020-ff33033f-e841-4da8-959d-b1773f953d9f.png)
+
+DXF Merger, just a function wrap based on ezdxf to merge n dxf files into a unique new dxf file.
 
 ## Requirements
 
