@@ -1,0 +1,11 @@
+{
+    "desc": "files for a demo dxf merger based on ezdxf",
+    "pathin": "in/",
+    "pathout": "out/",
+    "filelist": [
+      "manzana.dxf",
+      "parcela.dxf",
+      "tejido.dxf"
+    ],
+    "targetfile":"merge.dxf"
+}
