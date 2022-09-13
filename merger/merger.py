@@ -2,10 +2,11 @@ import sys
 import ezdxf
 from ezdxf.addons import Importer
 import json
+from os import listdir
+from os.path import isfile, join
 
 """
 The idea of this script is to merge n dxf files (from pathin) into a target dxf file (into pathout)
-
 """
 
 
@@ -36,15 +37,15 @@ def merge(source, target):
 
 # opening JSON file
 jsondata = json.load(open("data.json"))
-files = jsondata["filelist"]
 
-# alternative way of get filelist only using pathin (no filename hardcoding)
-"""
-from os import listdir
-from os.path import isfile, join
-onlyfiles = [f for f in listdir(jsondata['pathin']) if isfile(join(jsondata['pathin'], f))]
-print(onlyfiles)
-"""
+if jsondata["use_filelist"]:
+    # it use the hardcode file list from data.json
+    files = jsondata["filelist"]
+else:
+    # alternative way of get filelist only using pathin (no filename hardcoding)
+    files = [
+        f for f in listdir(jsondata["pathin"]) if isfile(join(jsondata["pathin"], f))
+    ]
 
 # empty target dxf
 target = ezdxf.new()
@@ -54,7 +55,7 @@ for file in files:
     print("filein ->", file)
     merge(jsondata["pathin"] + file, target)
 
-# save merge
+# save merged dfx target
 try:
     print("target ->", jsondata["targetfile"])
     target.saveas(jsondata["pathout"] + jsondata["targetfile"])
