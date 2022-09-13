@@ -43,9 +43,12 @@ if jsondata["use_filelist"]:
     # it use the hardcode file list from data.json
     files = jsondata["filelist"]
 else:
-    # alternative way of get filelist only using pathin (no filename hardcoding)
+    # alternative way of get filelist only using pathin (no filename hardcoding), only dxf files
     files = [
-        f for f in listdir(jsondata["pathin"]) if isfile(join(jsondata["pathin"], f))
+        f
+        for f in listdir(jsondata["pathin"])
+        if isfile(join(jsondata["pathin"], f))
+        if f.lower().endswith(".dxf")
     ]
 
 # empty target dxf
