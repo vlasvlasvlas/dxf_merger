@@ -18,12 +18,12 @@ def merge(source, target):
         source = ezdxf.readfile(source)
 
     except ezdxf.DXFError as e:
-        print('\n' + '*' * 40)
-        print('FOUND DXF ERROR: {}'.format(str(e)))
-        print('*' * 40 + '\n')
+        print("\n" + "*" * 40)
+        print("FOUND DXF ERROR: {}".format(str(e)))
+        print("*" * 40 + "\n")
         return False
-    
-    try:        
+
+    try:
         importer = Importer(source, target)
         # import all entities from source modelspace into target modelspace
         importer.import_modelspace()
@@ -51,12 +51,12 @@ target = ezdxf.new()
 
 # merger with dict
 for file in files:
-    print("filein ->",file)
+    print("filein ->", file)
     merge(jsondata["pathin"] + file, target)
 
 # save merge
 try:
-    print("target ->",jsondata["targetfile"])
+    print("target ->", jsondata["targetfile"])
     target.saveas(jsondata["pathout"] + jsondata["targetfile"])
 except Exception as e:
     print("Error -> ", e.__class__)
