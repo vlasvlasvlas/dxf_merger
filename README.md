@@ -9,7 +9,7 @@ DFX Merger, just a function wrap based on ezdxf to merge n dxf files into a uniq
 
 ## How it works
 
-Basically it uses ezdxf to merge any dxf into an empty shell.
+Basically it uses ezdxf's add-on Importer to merge any dxf into an empty shell.
 
 You can edit data.json file to change input folder+files, output folder+file.
 
