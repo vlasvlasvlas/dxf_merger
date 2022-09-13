@@ -1,6 +1,7 @@
 # DXF merger
 
-![imagen](https://user-images.githubusercontent.com/4071796/190007020-ff33033f-e841-4da8-959d-b1773f953d9f.png)
+<img width="500" alt="DXF Merger" src="https://user-images.githubusercontent.com/4071796/190007423-9e796567-4bf9-4c56-8d1c-388fd69a0f4c.png">
+
 
 DXF Merger, just a function wrap based on ezdxf to merge n dxf files into a unique new dxf file.
 
