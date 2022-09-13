@@ -7,6 +7,10 @@ DXF merger, just a function wrap based on ezdxf to merge n dxf files into a uniq
 
 ## Requirements
 
+- Python 3.7+
+
+- Virtualenv 
+
 - ezdxf (https://github.com/mozman/ezdxf)
 
 Code formatter used: black (https://github.com/psf/black)
