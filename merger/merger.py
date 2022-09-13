@@ -51,7 +51,7 @@ else:
 # empty target dxf
 target = ezdxf.new()
 
-# merger with dict
+# merger with filelist
 for file in files:
     print("filein ->", file)
     merge(jsondata["pathin"] + file, target)
