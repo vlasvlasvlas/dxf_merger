@@ -17,3 +17,7 @@ You can edit data.json file to change input folder+files, output folder+file.
 
 You can get more info at https://ezdxf.readthedocs.io/en/stable/addons/importer.html
 
+## TO-DO
+
+- unit test transformation.
+- maybe transform script into Class so i think ll be easier to reuse / include into a data pipeline.
