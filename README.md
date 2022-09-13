@@ -15,7 +15,22 @@ Code formatter used: black (https://github.com/psf/black)
 
 Basically it uses ezdxf's add-on Importer to merge any dxf into an empty shell.
 
-You can edit data.json file to change input folder+files, output folder+file.
+You can edit data.json file to change input folder+files, output folder+file:
+
+```
+{
+    "desc": "files for a demo dxf merger based on ezdxf",
+    "pathin": "in/",
+    "pathout": "out/",
+    "targetfile":"merge.dxf",
+    "use_filelist":true,
+    "filelist": [
+      "manzana.dxf",
+      "parcela.dxf",
+      "tejido.dxf"
+    ]    
+}
+```
 
 ## More info
 
