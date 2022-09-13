@@ -16,6 +16,7 @@ def merge(source, target):
     output: accumulative dxf data on target file
     """
     try:
+        # https://ezdxf.readthedocs.io/en/stable/drawing/management.html?highlight=readfile#ezdxf.readfile
         source = ezdxf.readfile(source)
 
     except ezdxf.DXFError as e:
