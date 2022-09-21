@@ -31,7 +31,7 @@ def merge(source, target):
     importer.finalize()
 
 
-def assign_layer(doc, layer_props,filenoext):
+def assign_layer(doc, layer_props, filenoext):
     """
     Assign layer inside dxf target based on new layer (layername)
     Set active entity for dxf layer with equivalent layername
@@ -78,7 +78,7 @@ for filename in files:
     append_dxf = ezdxf.readfile(pathfilename)
 
     # assign layer
-    assign_layer(append_dxf, layer_props,filenoext)
+    assign_layer(append_dxf, layer_props, filenoext)
 
     # merge
     merge(append_dxf, target_dxf)
