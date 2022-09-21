@@ -31,20 +31,20 @@ def merge(source, target):
     importer.finalize()
 
 
-def assign_layer(doc, layer_props):
+def assign_layer(doc, layer_props,filenoext):
     """
     Assign layer inside dxf target based on new layer (layername)
     Set active entity for dxf layer with equivalent layername
     """
     layer_name, layer_color = layer_props
     try:
-        new_layer = doc.layers.new(layer_name)
+        new_layer = doc.layers.new(filenoext)
     except ezdxf.DXFTableEntryError:
-        print(f"layer '{layer_name}' already exist")
+        print(f"layer '{filenoext}' already exist")
         return
     new_layer.dxf.color = layer_color
     for entity in doc.modelspace():
-        entity.dxf.layer = layer_name
+        entity.dxf.layer = filenoext
 
 
 # opening JSON file
@@ -71,13 +71,14 @@ cache = bbox.Cache()
 for filename in files:
     # path prepare
     print("input  ->", filename)
-    filename = jsondata["pathin"] + filename
+    pathfilename = jsondata["pathin"] + filename
+    filenoext = filename.split(".")[0]
 
     layer_props = random.choice(colorlist)
-    append_dxf = ezdxf.readfile(filename)
+    append_dxf = ezdxf.readfile(pathfilename)
 
     # assign layer
-    assign_layer(append_dxf, layer_props)
+    assign_layer(append_dxf, layer_props,filenoext)
 
     # merge
     merge(append_dxf, target_dxf)
