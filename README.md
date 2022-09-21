@@ -1,6 +1,3 @@
-
-
-
 # DXF merger
   <a href="https://github.com/vlasvlasvlas/dxf_merger/actions/workflows/codeql-analysis.yml">
     <img src="https://github.com/vlasvlasvlas/dxf_merger/actions/workflows/codeql-analysis.yml/badge.svg?event=push" alt="CI Badge"/>
@@ -9,7 +6,7 @@
 <img width="900" alt="DXF Merger" src="https://user-images.githubusercontent.com/4071796/191580886-a64e9a4e-a92c-4057-a504-b561baea3b52.png">
 
 
-DXF merger, just a function wrap based on ezdxf to merge n dxf files into a unique new dxf file.
+Python DXF merger solution. Just a function wrap based on ezdxf to merge n dxf files into a unique new dxf file.
 
 ## Requirements
 
