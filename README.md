@@ -1,5 +1,10 @@
-# DXF merger
 
+
+
+# DXF merger
+  <a href="https://github.com/vlasvlasvlas/dxf_merger/actions/workflows/codeql-analysis.yml">
+    <img src="https://github.com/vlasvlasvlas/dxf_merger/actions/workflows/codeql-analysis.yml/badge.svg?event=push" alt="CI Badge"/>
+  </a>
 <img width="400" alt="DXF Merger" src="https://user-images.githubusercontent.com/4071796/190007423-9e796567-4bf9-4c56-8d1c-388fd69a0f4c.png">
 <img width="400" alt="DXF Merger" src="https://user-images.githubusercontent.com/4071796/191415102-54fb53ad-273d-4046-b308-453f021c4de8.png">
 
