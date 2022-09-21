@@ -4,5 +4,5 @@
     "pathout": "out/",
     "targetfile": "merge.dxf",
     "use_filelist": true,
-    "filelist": ["manzana.dxf", "parcela.dxf", "tejido.dxf"],
+    "filelist": ["manzana.dxf", "parcela.dxf", "tejido.dxf"]
 }
