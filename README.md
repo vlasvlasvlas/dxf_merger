@@ -7,6 +7,7 @@
 
 
 Python DXF merger solution. Just a function wrap based on ezdxf to merge n dxf files into a unique new dxf file.
+This solution merge each content from source dxf into a new layer on target dxf.
 
 ## Requirements
 
